@@ -1,0 +1,119 @@
+.App {
+  height: 100vh;
+  right: 0;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction:row-reverse;
+  text-align: center;
+  align-items: flex-start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: rebeccapurple;
+  position:fixed;
+  left: 0;
+  color: white;
+}
+
+.sidebarlist {
+  height: auto;
+  padding: 0;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;  
+  gap: 10px;
+}
+
+.article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  gap: 10px;
+  height: 260px;
+  width: 200px;
+  align-items: center;
+  padding: 2px;
+  color: aliceblue;
+}
+
+.delete {
+  background-color: white;
+  border: none;
+  display: flex;
+  padding: 3px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(242 100 100);
+}
+
+.update {
+  background-color: none;
+  border: none;
+  display: flex;
+  border-radius: 5px;
+  padding: 3px 6px;
+  cursor: pointer;
+  color: rgb(139 139 234);
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.btn1 {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 250px;
+  padding: 50;
+}
+
+.row {
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row #icon {
+  flex: 3;
+}
+
+.row #title {
+  flex: 7;
+  text-align: justify;
+  cursor: pointer;
+}
+
+.nabtn {
+  text-decoration: none;
+  background-color: rebeccapurple;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
